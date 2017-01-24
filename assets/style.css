@@ -6,3 +6,9 @@
 .about-container {
   color: blue;
 }
+
+.arrow-board-containr {
+  width: 600px;
+  background-color: pink;
+  border: 1px solid black;
+}
