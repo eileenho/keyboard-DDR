@@ -1,10 +1,48 @@
 <html>
   <head>
     <title>Keyboard DDR</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.scss">
+    <script type="application/javascript" src="lib/bundle.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script>
+      let stage, circle;
+
+      function init() {
+        stage = new createjs.Stage("demoCanvas");
+
+        circle = new createjs.Shape();
+        circle.graphics.beginFill("DeepSkyBlue").drawPolyStar(0, 0, 50, 3, 0, 90);
+        circle.x = 100;
+        circle.y = 100;
+        stage.addChild(circle);
+
+        createjs.Ticker.on("tick", tick);
+        createjs.Ticker.setFPS(30);
+    }
+
+      function tick(event) {
+        circle.x = circle.x + 3;
+        if (circle.x > stage.canvas.width) { circle.x = 0; }
+        stage.update(event);
+      }
+    </script>
   </head>
 
-  <body>
-      <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+  <body onload="init()">
+    <div className="game-container">
+      <div className="about-container">
+        <h1>Keyboard DDR</h1>
+        <p>Some text</p>
+      </div>
+
+      <div className="arrow-board-container">
+        <canvas id="demoCanvas" width="500" height="600"></canvas>
+      </div>
+
+      <div className="controls-container">
+        <h1>Score</h1>
+      </div>
+    </div>
   </body>
 
 </html>
