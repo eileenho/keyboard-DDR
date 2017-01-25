@@ -4,63 +4,6 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
-    <!-- <script>
-      let stage, left, right, down, up, movingLeft, movingDown, movingUp, movingRight;
-
-      function init() {
-        stage = new createjs.Stage("demoCanvas");
-
-
-        left = new createjs.Shape();
-        down = new createjs.Shape();
-        up = new createjs.Shape();
-        right = new createjs.Shape();
-
-        movingLeft = new createjs.Shape();
-        movingDown = new createjs.Shape();
-        movingUp = new createjs.Shape();
-        movingRight = new createjs.Shape();
-
-        left.graphics.beginFill("DeepSkyBlue").drawPolyStar(75, 75, 50, 3, 0, 60);
-        down.graphics.beginFill("DeepSkyBlue").drawPolyStar(525, 75, 50, 3, 0, 0);
-        up.graphics.beginFill("DeepSkyBlue").drawPolyStar(375, 75, 50, 3, 0, 30);
-        right.graphics.beginFill("DeepSkyBlue").drawPolyStar(225, 75, 50, 3, 0, 90);
-
-        movingLeft.graphics.beginFill("Red").drawPolyStar(75, 600, 50, 3, 0, 60);
-        movingDown.graphics.beginFill("Red").drawPolyStar(525, 600, 50, 3, 0, 0);
-        movingUp.graphics.beginFill("Red").drawPolyStar(375, 600, 50, 3, 0, 30);
-        movingRight.graphics.beginFill("Red").drawPolyStar(225, 600, 50, 3, 0, 90);
-
-        stage.addChild(left);
-        stage.addChild(down);
-        stage.addChild(up);
-        stage.addChild(right);
-
-        stage.addChild(movingLeft);
-        stage.addChild(movingDown);
-        stage.addChild(movingUp);
-        stage.addChild(movingRight);
-
-
-
-        stage.update();
-
-        createjs.Ticker.on("tick", tick);
-        createjs.Ticker.setFPS(30);
-    }
-
-      function tick(event) {
-        movingLeft.y = movingLeft.y - 3;
-        if (movingLeft.y > stage.canvas.height) { movingLeft.y = 600; }
-        movingDown.y = movingDown.y - 3;
-        if (movingDown.y > stage.canvas.height) { movingDown.y = 600; }
-        movingUp.y = movingUp.y - 3;
-        if (movingUp.y > stage.canvas.height) { movingUp.y = 600; }
-        movingRight.y = movingRight.y - 3;
-        if (movingRight.y > stage.canvas.height) { movingRight.y = 600; }
-        stage.update(event);
-      }
-    </script> -->
   </head>
 
   <body >
