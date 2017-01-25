@@ -1,14 +1,18 @@
 .game-container {
   display: flex;
   flex-direction: row nowrap;
+  background-color: black;
+  color: white;
 }
 
 .about-container {
-  color: blue;
+  color: white;
+  background-color: black;
+  padding: 10px;
 }
 
-.arrow-board-containr {
-  width: 600px;
-  background-color: pink;
+.arrow-board-container {
+  max-width: 100%;
+  background-image: url("background.jpg");
   border: 1px solid black;
 }
