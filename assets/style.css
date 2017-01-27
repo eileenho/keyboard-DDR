@@ -5,7 +5,7 @@ body {
 
 p {
   font-family: 'Raleyway', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
   font-style: italic;
 }
@@ -76,6 +76,17 @@ p {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   background-color: #fbca53;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.option-button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  background-color: #8f4290;
   color: black;
   cursor: pointer;
   border: 1px solid black;
