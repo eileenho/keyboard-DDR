@@ -3,6 +3,13 @@ body {
   padding: 0;
 }
 
+p {
+  font-family: 'Raleyway', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  font-style: italic;
+}
+
 .game-container {
   display: flex;
   flex-direction: row nowrap;
@@ -16,14 +23,62 @@ body {
   width: 250px;
 }
 
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 230px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.controls {
+  width: 230px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.number {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Dekko', cursive;
+  font-size: 32px;
+  text-decoration: underline;
+  color: #ea4893;
+  font-stretch: expanded;
+}
+
 .arrow-board-container {
   max-width: 100%;
   background-image: url("background.jpg");
   border: 1px solid black;
 }
 
-#canvas-flash {
-  position: absolute;
-  top: 0;
-  left: 250px;
+.level-button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  background-color: #fbca53;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 3px;
 }

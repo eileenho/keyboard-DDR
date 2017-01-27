@@ -4,30 +4,33 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dekko|Raleway" rel="stylesheet">
   </head>
 
   <body >
     <div class="game-container">
       <div class="about-container">
-        <h1>Tap-Tap-Revolution</h1>
+        <img src="./assets/logo.png" class="logo">
         <p>A keyboard version of Dance-Dance-Revolution</p>
-        <p>Press spacebar to begin!</p>
+        <p> Choose a level to begin playing!</p>
+        <h1 class="title">CONTROLS</h1>
+        <img src="./assets/controls.png" class="controls">
       </div>
 
       <div class="arrow-board-container">
         <canvas id="canvas" width="600" height="600"></canvas>
-        <canvas id="canvas-flash" width="600" height="600"></canvas>
       </div>
 
       <div class="controls-container">
-        <h1>Score:</h1>
-        <h1 id="score">0</h1>
-        <h1>Misses:</h1>
-        <h1 id="misses">0</h1>
-        <h1>Choose Level</h1>
-        <button id="easy">Easy</button>
-        <button id="normal">Normal</button>
-        <button id="difficult">Difficult</button>
+        <h1 class="title">SCORE:</h1>
+        <h1 id="score" class="number">0</h1>
+        <h1 class="title">MISSES:</h1>
+        <h1 id="misses" class="number">0</h1>
+        <h1 class="title">LEVEL:</h1>
+        <button class="level-button" id="easy">Easy</button>
+        <button class="level-button" id="normal">Normal</button>
+        <button class="level-button" id="difficult">Difficult</button>
+        <br>
         <button id="mute-button">Mute</button>
         <button id="stop">End Game</button>
       </div>
