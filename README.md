@@ -1,6 +1,6 @@
 #Tap-Tap-Revolution
 
-[Tap-Tap-Revolution link][tap-tap-revolution] Tap-Tap-Revolution is a keyboard version of the popular
+[Tap-Tap-Revolution][tap-tap-revolution] Tap-Tap-Revolution is a keyboard version of the popular
 game, Dance-Dance-Revolution.
 
 [tap-tap-revolution]: https://eileenho.github.io/keyboard-DDR/index.html
