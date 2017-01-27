@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .game-container {
   display: flex;
   flex-direction: row nowrap;
@@ -8,11 +13,17 @@
 .about-container {
   color: white;
   background-color: black;
-  padding: 10px;
+  width: 250px;
 }
 
 .arrow-board-container {
   max-width: 100%;
   background-image: url("background.jpg");
   border: 1px solid black;
+}
+
+#canvas-flash {
+  position: absolute;
+  top: 0;
+  left: 250px;
 }

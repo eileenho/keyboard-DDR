@@ -9,16 +9,24 @@
   <body >
     <div class="game-container">
       <div class="about-container">
-        <h1>Keyboard DDR</h1>
-        <p>Some text</p>
+        <h1>Tap-Tap-Revolution</h1>
+        <p>A keyboard version of Dance-Dance-Revolution</p>
+        <p>Press spacebar to begin!</p>
       </div>
 
       <div class="arrow-board-container">
         <canvas id="canvas" width="600" height="600"></canvas>
+        <canvas id="canvas-flash" width="600" height="600"></canvas>
       </div>
 
       <div class="controls-container">
-        <h1>Score</h1>
+        <h1>Score:</h1>
+        <h1 id="score">0</h1>
+        <h1>Choose Level</h1>
+        <button id="easy">Easy</button>
+        <button id="difficult">Difficult</button>
+        <button id="mute-button">Mute</button>
+        <button id="stop">End Game</button>
       </div>
     </div>
   </body>
