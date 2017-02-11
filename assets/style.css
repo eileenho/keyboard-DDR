@@ -13,6 +13,7 @@ p {
 .game-container {
   display: flex;
   flex-direction: row nowrap;
+  justify-content: center;
   background-color: black;
   color: white;
 }
