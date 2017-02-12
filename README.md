@@ -16,6 +16,7 @@ The game was written in Javascript and rendered using canvas and Easeljs.  Each 
 
 ```js
 checkLeft() {
+  //create "glowing" arrow that corresponds to keypresses so players can see which arrows they are pressing
   let glowLeft = new Arrows.glowLeftArrow();
   this.stage.addChild(glowLeft);
   this.stage.update();
@@ -23,8 +24,10 @@ checkLeft() {
     this.stage.removeChild(glowLeft);
     glowLeft.clear;
   }, 150);
-  if (this.currentLeftArrows[0] && this.currentLeftArrows[0].y < 50 && this.currentLeftArrows[0].y > 10) {
+  //check position of the scrolling arrow against the stationary arrow and executes game logic
+  if (this.currentLeftArrows[0] && this.currentLeftArrows[0].y < 50 && this.currentLeftArrows[0].y > 20) {
     this.showHit();
+    this.removeHitLeft();
   } else {
     this.showMiss();
   }
@@ -39,10 +42,12 @@ play(level) {
   let times = [];
 
   if (level === "easy") {
+    //arrows will be further spaced apart from each other
     times = [ 5000, 9000, 14000, 20000];
   } else if (level === "normal" ) {
     times = [2000, 5000, 3000, 6000 ];
   } else {
+    //arrows will be created with more frequency, and at similar times to increase difficulty
     times = [ 1000, 1500, 2500, 2000 ];
   }
 
