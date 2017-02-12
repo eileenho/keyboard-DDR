@@ -56,4 +56,4 @@ play(level) {
 * song variety varied arrow "choreography" that is not looped
 * high score storage
 
-[screen]: ./docs/screen.png
+[screen]: ./demo.gif
