@@ -8,6 +8,7 @@ p {
   font-size: 16px;
   padding: 10px;
   font-style: italic;
+  margin: 0px;
 }
 
 .game-container {
@@ -65,6 +66,7 @@ p {
   text-decoration: underline;
   color: #ea4893;
   font-stretch: expanded;
+  margin: 10px;
 }
 
 .arrow-board-container {
@@ -93,4 +95,14 @@ p {
   border: 1px solid black;
   border-radius: 3px;
   margin: 3px;
+}
+
+.logo-link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-link {
+  width: 50px;
+  padding: 10px;
 }
