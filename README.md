@@ -1,17 +1,17 @@
-#Tap-Tap-Revolution
+# Tap-Tap-Revolution
 
 [Tap-Tap-Revolution][tap-tap-revolution] Tap-Tap-Revolution is a keyboard version of the popular
 game, Dance-Dance-Revolution.
 
 [tap-tap-revolution]: https://eileenho.github.io/keyboard-DDR/index.html
 
-##Instructions
+## Instructions
 
 Colored arrows scroll vertically across the screen at varying levels of difficulty.  As they pass over the stationary arrows at the top of the screen, players need to press the corresponding keys.  If the player presses the key at the correct time, his or her score will increase by 100 points.  Incorrect key presses result in a "miss."  Gameplay ends once a player reaches 20 misses.
 
 ![screen][screen]
 
-##Technology
+## Technology
 The game was written in Javascript and rendered using canvas and Easeljs.  Each keypress calls a function to check the position of the currently moving arrow against the stationary arrow.
 
 ```js
@@ -57,7 +57,7 @@ play(level) {
   this.rightInt = setInterval( createRightArrow, times[3] );
 ```
 
-##Future features
+## Future features
 * song variety varied arrow "choreography" that is not looped
 * high score storage
 
